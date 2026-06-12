@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/carta.css">
+    <title>Uma graça</title>
+</head>
+<body>
+        <!-- Partículas de fundo -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <div class="instruction">✨ Clique no envelope ✨</div>
+        
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="envelope-flap-top"></div>
+            <div class="envelope-body"></div>
+            <div class="envelope-flap-left"></div>
+            <div class="envelope-flap-right"></div>
+            <div class="envelope-flap-bottom"></div>
+            <div class="wax-seal"></div>
+        </div>
+
+        <div class="letter" id="letter">
+            <button class="close-btn" onclick="closeEnvelope(event)">×</button>
+            <div class="letter-content">
+                <h2>Para Minha Esposa</h2>
+                <p>
+                    Cada dia ao seu lado é um presente que agradeço à vida. 
+                    Seu sorriso ilumina meus dias mais sombrios.
+                </p>
+                <p>
+                    Você é meu amor, minha parceira, minha melhor amiga. 
+                    Te amo mais do que palavras podem expressar.
+                </p>
+                <p class="signature">Com todo meu amor,<br>❤️</p>
+            </div>
+        </div>
+
+        <div class="floating-hearts" id="hearts"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
