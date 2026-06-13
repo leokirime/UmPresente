@@ -12,8 +12,10 @@
 
         function openEnvelope() {
             const envelope = document.getElementById('envelope');
+            const letter = document.getElementById('letter');
             if (!envelope.classList.contains('open')) {
                 envelope.classList.add('open');
+                letter.classList.add('open');
                 createHearts();
             }
         }
@@ -21,7 +23,9 @@
         function closeEnvelope(event) {
             event.stopPropagation();
             const envelope = document.getElementById('envelope');
+            const letter = document.getElementById('letter');
             envelope.classList.remove('open');
+            letter.classList.remove('open');
         }
 
         function createHearts() {
